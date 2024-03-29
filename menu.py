@@ -225,7 +225,7 @@ for idx, item in enumerate(customer_order, 1):
     quantity = item["Quantity"]
     num_spaces = 25 - len(name)
     spaces = " " * num_spaces
-    print(f"{idx} | {name.ljust(25)} | ${price:.2f} | {quantity}")
+print(f"{idx} | {name.ljust(25)} | ${price:.2f} | {quantity}")
 total_cost = sum(item["Price"] * item["Quantity"] for item in customer_order)
 print(f"\nTotal Cost: ${total_cost:.2f}")
 print("This is what we are preparing for you:\n")
